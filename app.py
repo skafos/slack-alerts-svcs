@@ -11,7 +11,7 @@ class SlackAlertsService:
     hydra = None                # hydra instance
     si = None                   # service info
     processor = Processor()     # message processor
-    redis_connection_string = os.getenv('REDIS_CONNECTION_STRING')
+    redis_connection_string = os.getenv('HYDRA_REDIS_URL')
 
     async def main(self):
         service_version = open('VERSION').read().rstrip()
