@@ -38,3 +38,20 @@ Alternatively, if you wish to send to a different channel, indicate the channel 
   }
 }
 ```
+
+If you wish to post to the channel without using the `@here` alert, include the optional param `notify_channel` set to `false` in the message:
+```
+{
+  "frm": "some-v1-svcs:/",
+  "to": "slack-alerts-svcs:/",
+  "mid": "951bdaf6-6199-419a-bba8-02feb993c63e",
+  "ts": "2021-01-21T19:40:38.333Z",
+  "ver": "UMF/1.4.6",
+  "typ": "slack_alerts.send",
+  "bdy": {
+   "testing": "testing",
+   "channel": "shopify-installs",
+   "notify_channel": false
+  }
+}
+```
