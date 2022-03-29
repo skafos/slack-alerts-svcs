@@ -1,4 +1,4 @@
-FROM skafos/ais-base:0.1.1
+FROM skafos/ais-base:0.2.5
 EXPOSE 32000
 
 WORKDIR /usr/src/app
